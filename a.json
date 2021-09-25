@@ -33,8 +33,8 @@
 "provisioners": [
         {
             "type": "file",
-            "source": "{{ template_dir }}/target/vmss-blue-green-0.0.1-SNAPSHOT.war",
-            "destination": "/tmp/vmss-blue-green-0.0.1-SNAPSHOT.war"
+            "source": "{{ template_dir }}/target/java-hello-world.war",
+            "destination": "/tmp/java-hello-world.war"
         },
         {
             "execute_command": "chmod +x {{ .Path }}; {{ .Vars }} sudo -E sh '{{ .Path }}'",
